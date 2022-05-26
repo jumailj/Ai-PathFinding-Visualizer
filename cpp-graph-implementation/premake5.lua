@@ -16,7 +16,7 @@ project "cpp-graph-implementation"
 
 	files {"%{prj.name}/src/**.h", "%{prj.name}/src/**.cpp"}
 
-	filter	"system:windows"
+	filter"system:windows"
 		cppdialect "c++17"
 		staticruntime"On"
 		systemversion "latest"
