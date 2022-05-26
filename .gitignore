@@ -1,0 +1,11 @@
+#visual studio
+
+#files
+*.sln
+*.vcxproj
+
+#folders
+*.vs
+/bin
+/bin-int
+
