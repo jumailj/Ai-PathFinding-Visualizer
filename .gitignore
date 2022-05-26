@@ -3,9 +3,10 @@
 #files
 *.sln
 *.vcxproj
+*.vcxproj.user
 
 #folders
 *.vs
-/bin
-/bin-int
+/cpp-graph-implementation/bin
+/cpp-graph-implementation/bin-int
 
