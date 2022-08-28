@@ -11,15 +11,54 @@
         
         <!--linking css files-->
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="css/menu.css"/>  
-
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/> 
+        <link rel="stylesheet" type="text/css" href = "css/selection.css"/>
     </head>
 
     <body>
         <div id="menu">
+                <!-- settings bar -->
                 <div id ="menu_title_div">
-                    <span id="menu_title">Settings</span>
+                    <span id="menu_title">Pathfinding</span>
                 </div>
+                
+                <!-- solving Algorithm header and it's dropdown menu-->
+                <div class ="choice" id ="choice_1">
+                    <span class="choice_label" id ="">Solving Algorithm</span>
+                    <label class="select" for="">
+                        <select id="" required="required">
+                            <option selected value="1">Breadth-First</option>
+                            <option value ="2">Bidirectional Breadth-First</option>
+                            <option value="3">Greedy Best-First</option>
+                            <option value="4">Dijkstra</option>
+                            <option value="5">A*</option>
+                        </select>
+                        <svg>
+                            <use xlink:href="#select-arrow-down"></use>
+                        </svg>
+                    </label>
+                </div>
+
+                <!-- maze Algorithm header and it's dropdown menu-->
+                <div class="choice" id="choice_2">
+                  <span class="choice_label" id="">Maze Algorithm</span>
+                    <label class="select" for="">
+                        <select id="" required="required">
+                            <option hidden selected value="0">Custom</option>
+                            <option value="1">Randomized Depth-first</option>
+                            <option value="2">Kruskal's Algorithm</option>
+                            <option value="3">Prim's algorithm</option>
+                            <option value="4">wilson's algorithm</option>
+                            <option value="5">aldous-broder Algorithm</option>
+                            <option value="6">recursive division</option>
+                        </select>
+                        <svg>
+                            <use xlink:href="#select-arrow-down"></use>
+                        </svg>
+                    </label>
+                </div>
+
+
 
         </div>
     </body>

@@ -16,3 +16,30 @@
 	top: 46%;
 	left: 50%;
 }
+
+.choice {
+	min-height: 100vh;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-left: 28px;
+	padding-right: 28px;
+	position: absolute;
+	width: 100%;
+}
+
+#choice_1{
+	top:100px;
+}
+#choice_2{
+	top:215px;
+}
+
+.choice_label{
+	white-space:nowrap;
+	color:#404d68;
+	font-size:18px;
+	position: absolute;
+	transform:translate(25%,-50%);
+	left:0px;
+	top:0px;
+}
