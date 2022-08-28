@@ -1,0 +1,13 @@
+#menu{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 30%;
+    z-index:10;
+    text-align: center;
+    padding-top:10px;
+    box-shadow:8px 0px 30px rgba(6,13,29,0.418);
+    font-family: 'Roboto', sans-serif;
+}
