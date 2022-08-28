@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <link rel="stylesheet" type="text/css" href="css/menu.css"/> 
         <link rel="stylesheet" type="text/css" href = "css/selection.css"/>
+        <link rel="stylesheet" type="text/css" href="css/buttons.css"/>
     </head>
 
     <body>
@@ -26,6 +27,7 @@
                 <div class ="choice" id ="choice_1">
                     <span class="choice_label" id ="">Solving Algorithm</span>
                     <label class="select" for="">
+                        <!-- drop down-->
                         <select id="" required="required">
                             <option selected value="1">Breadth-First</option>
                             <option value ="2">Bidirectional Breadth-First</option>
@@ -33,6 +35,7 @@
                             <option value="4">Dijkstra</option>
                             <option value="5">A*</option>
                         </select>
+                        <!-- drop down arrow-->
                         <svg>
                             <use xlink:href="#select-arrow-down"></use>
                         </svg>
@@ -43,6 +46,7 @@
                 <div class="choice" id="choice_2">
                   <span class="choice_label" id="">Maze Algorithm</span>
                     <label class="select" for="">
+                        <!-- drop down -->
                         <select id="" required="required">
                             <option hidden selected value="0">Custom</option>
                             <option value="1">Randomized Depth-first</option>
@@ -52,15 +56,32 @@
                             <option value="5">aldous-broder Algorithm</option>
                             <option value="6">recursive division</option>
                         </select>
+                        <!-- dropdown arrow -->
                         <svg>
-                            <use xlink:href="#select-arrow-down"></use>
+                            <use xlink:href="#select-arrow-down"></use> 
                         </svg>
                     </label>
                 </div>
 
-
-
+                <!-- buttons------------->
+                <!-- clear button-->
+                <div id="button_1">
+                    <button class="my_button" id="claer">Clear</button>
+                </div>
+                <!-- play button-->
+                <div id="button_2">
+                    <button class="my_button" id="play">Start</button>
+                </div>
+                
+                <!-- draw '\/' symbol for dorop down --> 
+                <svg class="sprites">
+                    <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                      <polyline points="1 1 5 5 9 1"></polyline> 
+                    </symbol>
+                </svg>
         </div>
+
+
     </body>
 
 </html>

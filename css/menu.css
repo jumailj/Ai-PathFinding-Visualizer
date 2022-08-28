@@ -36,10 +36,20 @@
 
 .choice_label{
 	white-space:nowrap;
-	color:#404d68;
+	color:#313c52;
 	font-size:18px;
 	position: absolute;
 	transform:translate(25%,-50%);
 	left:0px;
 	top:0px;
+}
+
+.sprites
+{
+	position: absolute;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+	user-select: none;
+	box-sizing: border-box;
 }
