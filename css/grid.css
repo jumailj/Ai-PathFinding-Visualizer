@@ -64,12 +64,12 @@
 
 .cell_1.visited_cell
 {
-	background-color: rgb(164, 215, 246);
+	background-color: rgb(255, 124, 92);
 }
 
 .cell_2.visited_cell
 {
-	background-color: rgb(152, 203, 235);
+	background-color: rgb(255, 124, 92);
 }
 
 .start

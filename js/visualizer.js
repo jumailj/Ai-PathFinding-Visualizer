@@ -1,29 +1,6 @@
 "use strict";
 console.log('script::visualizer.js');
 
-// properties.js
-const initial_max_grid_size = 47;
-const menu_width = 350;
-
-let cell_size;
-let grid_size_x;
-let grid_size_y;
-let grid;
-
-let start_pos;
-let target_pos;
-
-let grid_clean = true;
-let my_interval;
-
-let moving_start = false;
-let moving_target = false;
-
-let clicking = false;
-
-let generating = false;
-let timeouts = [];
-
 /*
 window.addEventListener('resize', function(event) {
     set_grip_properties();
@@ -80,8 +57,8 @@ function generate_grid() {
     set_grip_properties();
 
     // todo: hard coded. code should auto generate:
-    grid_size_x= 50;
-    grid_size_y= 50;
+    grid_size_x= 40;
+    grid_size_y= 40;
     
     // create new table and assign "my_table" id to table;
     let table = document.createElement("table");
@@ -323,7 +300,5 @@ function visualizer_event_listeners()
 }
 
 // calling
-generate_grid();
-// delete_grid();
-// click_event();
-visualizer_event_listeners();
+// generate_grid();
+// visualizer_event_listeners();
