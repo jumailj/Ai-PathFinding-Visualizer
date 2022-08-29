@@ -1,45 +1,27 @@
-#menu_title_div
+.menu-title-wrap
 {
-	position: absolute;
-	top: 0px;
     width: 100%;
-	height: 60px;
 	background-color: #404d68;
+	padding:20px 0px; /*top,down. left,right*/
+	margin-bottom: 20px;
+	
 }
 
-#menu_title
+.menu-title
 {
-	position: absolute;
 	color: rgb(255, 255, 255);
 	font-size: 25px;
-	transform: translate(-50%, -50%);
-	top: 46%;
-	left: 50%;
 }
 
 .choice {
-	min-height: 100vh;
-	justify-content: center;
-	box-sizing: border-box;
-	padding-left: 28px;
-	padding-right: 28px;
-	position: absolute;
-	width: 100%;
-}
-
-#choice_1{
-	top:100px;
-}
-#choice_2{
-	top:215px;
+	padding: 20px;
+	text-align: left;
 }
 
 .choice_label{
 	white-space:nowrap;
 	color:#313c52;
 	font-size:18px;
-	position: absolute;
-	transform:translate(25%,-50%);
 	left:0px;
 	top:0px;
 }

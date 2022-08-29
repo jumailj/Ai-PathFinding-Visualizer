@@ -1,0 +1,85 @@
+
+#my_table
+{
+	border-spacing: 0;
+	border-collapse: collapse;
+	
+	width: 100vh;
+	height: 100vh;
+	
+}
+
+@-webkit-keyframes algo_in
+{
+	from { background-size: calc(0%) calc(0%); }
+	to { background-size: calc(100%) calc(100%); }
+}
+
+@keyframes algo_in
+{
+	from { background-size: calc(0%) calc(0%); }
+	to { background-size: calc(100%) calc(100%); }
+}
+
+.cell
+{
+	background-position: center; 
+	background-repeat: no-repeat;
+}
+
+.cell_1
+{
+	/*background-color: rgb(255, 255, 255); */
+	background-color: rgb(172, 172, 172);
+}
+
+.cell_2
+{
+	/* background-color: rgb(231, 231, 233); */
+	background-color: rgb(240, 240, 240);
+}
+
+.cell_wall
+{
+	background-color: rgb(63, 63, 63);
+}
+
+.cell_algo
+{
+	background-image: url(../resources/shapes/algo.svg);
+	background-size: calc(100%) calc(100%);
+	-webkit-animation: algo_in 0.3s;
+	animation: algo_in 0.3s;
+}
+
+.cell_1.cell_path
+{
+	background-color: rgb(251, 244, 79);
+}
+
+.cell_2.cell_path
+{
+	background-color: rgb(245, 238, 73);
+}
+
+.cell_1.visited_cell
+{
+	background-color: rgb(164, 215, 246);
+}
+
+.cell_2.visited_cell
+{
+	background-color: rgb(152, 203, 235);
+}
+
+.start
+{
+	background-image: url(../resources/shapes/start.svg);
+	background-size: calc(100%) calc(100%);
+}
+
+.target
+{
+	background-image: url(../resources/shapes/target.svg);
+	background-size: calc(100%) calc(100%);
+}

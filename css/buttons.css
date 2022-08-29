@@ -1,43 +1,34 @@
-#button_1{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    width: 50%;
-    top:340px;
-    left:50%;
-}
-
-#button_2{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    width: 50%;
-    top:390px;
-    left:50%;
+.button-wrap{
+	display: flex;
+	padding: 0px 20px 20px 20px;
+	margin-top:25px;
 }
 
 .my_button
 {
-	-webkit-appearance: none;
+	flex: 1;
+	border: 1px solid rgb(149 149 149);
 	padding: 7px 0px 7px 0px;
-	width: 100%;
-	border: 1px solid #c9cfd8;
-	border-radius: 5px;
-	background: #fff;
-	box-shadow: 0 1px 3px -2px #9098a9;
-	cursor: pointer;
-	font-family: inherit;
-	font-size: 18px;
-	transition: all 150ms ease;
-	box-sizing: border-box;
-	color: #404d68;
-	text-align: center;
+	border-radius: 4px;
+	height: 35px;
 }
+
+.my_button.a
+{
+	margin-right: 5px;
+}
+
+.my_button.b
+{
+	margin-left: 5px;
+}
+
 
 .my_button:hover
 {
 	outline: none;
 	border-color: #07f;
-	box-shadow: 0 0 0 2px rgba(0,119,255,0.2);
-	box-sizing: border-box;
+	cursor: pointer;
 }
 
 #play
