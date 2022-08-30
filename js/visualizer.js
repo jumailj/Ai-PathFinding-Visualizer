@@ -6,57 +6,14 @@ window.addEventListener('resize', function(event) {
     set_grip_properties();
 }, false);
 */
-function set_grip_properties() 
-{
-     let ratio = (window.innerWidth) / window.innerHeight;
-    console.log('ratio '+ ratio);
 
-    console.log("window width:: "+window.innerWidth);
-    console.log("window height:: "+window.innerHeight);
-
-    if (/*ratio > 1*/ false ) {
-        grid_size_x = Math.floor(initial_max_grid_size /ratio);
-        grid_size_y = initial_max_grid_size;
-
-            if(grid_size_y % 2 == 0){
-                grid_size_y +=1;
-            }
-
-            cell_size = Math.floor((window.innerWidth)/ initial_max_grid_size);
-            console.log("cell size: " + cell_size);
-
-              // debuging
-               console.log("ratio is greater than 1");
-               console.log("grid_size_x: " + grid_size_x);
-               console.log("grid_size_y: " + grid_size_y);
-    }
-    else 
-    {
-        grid_size_x =  Math.floor(initial_max_grid_size /* * ratio*/);
-        grid_size_y = initial_max_grid_size; // initial_max_grid_size;
-
-        console.log('..........grid_x_size..............: '+ grid_size_x);
-
-            if(grid_size_x %2 == 0){
-                grid_size_x +1;
-            }
-
-            cell_size = Math.floor(window.innerHeight/initial_max_grid_size);
-            console.log("cell size: " + cell_size);
-              
-               // debuging
-               console.log("ratio is lesser then 1");
-               console.log("grid_size_x: " + grid_size_x);
-               console.log("grid_size_y: " + grid_size_y);
-    }
-}
 
 function generate_grid() {
 
     // get get maximum x,y values;
-    set_grip_properties();
+    // set_grip_properties(); <= no longer using auto sizeing;
 
-    // todo: hard coded. code should auto generate:
+    
     grid_size_x= 40;
     grid_size_y= 40;
     

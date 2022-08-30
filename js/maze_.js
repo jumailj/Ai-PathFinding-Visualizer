@@ -97,7 +97,12 @@ function randomized_depth_first()
 					place_to_cell(wall[0], wall[1]).classList.add("visited_cell");
 			}
 		}
-	}, 50);
+	}, 1);
+}
+
+function test_gen()
+{
+	console.log("calling test_gen from current fundtion");
 }
 
 function maze_generator() {
@@ -149,11 +154,15 @@ function maze_generator() {
 	*/
 	grid_clean = false;
 
-	if (document.querySelector("#slct_2").value == "1")
+	if (document.querySelector("#slct_2").value == "1"){
 		console.log('calling reandomized_depth_first');
 		randomized_depth_first();
+	} else if (document.querySelector("#slct_2").value == "2") {
+		console.log('calling test_gen()');
+		test_gen();
+	}
+
+
 }
-
-
 
  // randomized_depth_first();
