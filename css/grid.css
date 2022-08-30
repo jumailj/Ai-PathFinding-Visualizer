@@ -74,6 +74,7 @@
 	background-color: rgb(255, 124, 92);
 }
 
+/* start and target style on grid */
 .start
 {
 	background-image: url(../resources/shapes/start.svg);
