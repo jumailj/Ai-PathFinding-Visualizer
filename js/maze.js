@@ -1,4 +1,5 @@
 "use strict";
+console.log("::: Maze Loaded::: ");
 
 function get_neighbours(cell, distance)
 {
@@ -102,7 +103,7 @@ function randomized_depth_first()
 
 function test_gen()
 {
-	console.log("calling test_gen from current fundtion");
+	console.log("calling test_gen() go generate maze");
 }
 
 function maze_generator() {
@@ -161,8 +162,6 @@ function maze_generator() {
 		console.log('calling test_gen()');
 		test_gen();
 	}
-
-
 }
 
  // randomized_depth_first();

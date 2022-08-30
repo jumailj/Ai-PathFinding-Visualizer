@@ -1,6 +1,6 @@
 "use strict";
 
-console.log('properties.script');
+console.log("::: properties Loaded::: ");
 
 // properties.js
 const initial_max_grid_size = 47;
@@ -24,3 +24,14 @@ let clicking = false;
 
 let generating = false;
 let timeouts = [];
+
+
+// algorithm variables;
+let node_list;
+let node_list_index;
+
+let path_list;
+let path_list_index;
+
+let found = false;
+let path = false;

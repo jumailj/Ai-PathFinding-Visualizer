@@ -1,5 +1,6 @@
 "use strict";
-console.log('script::visualizer.js');
+
+console.log("::: visualizer Loaded::: ");
 
 /*
 window.addEventListener('resize', function(event) {
@@ -13,9 +14,8 @@ function generate_grid() {
     // get get maximum x,y values;
     // set_grip_properties(); <= no longer using auto sizeing;
 
-    
-    grid_size_x= 40;
-    grid_size_y= 40;
+    grid_size_x= 10;
+    grid_size_y= 10;
     
     // create new table and assign "my_table" id to table;
     let table = document.createElement("table");

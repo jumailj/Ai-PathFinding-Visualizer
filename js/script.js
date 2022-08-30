@@ -1,4 +1,6 @@
 "use strict"
+console.log("::: script Loaded::: ");
+
 window.onload = function() {
     // functions calls.
     generate_grid();
