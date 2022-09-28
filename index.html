@@ -1,102 +1,100 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset = "utf-8"/> <!--support utf8 character set-->
-        <meta name = "viewport" contetn ="widht=device-width, initial-scale=0.0"> <!-- scale page in different screen sizes-->
-        <meta http-equiv="X-UA-Compatible" content="ie-edge"> <!-- support older version of IE-->
+  <head>
+    <meta charset="utf-8" />
+    <!--support utf8 character set-->
+    <meta name="viewport" contetn="widht=device-width, initial-scale=0.0" />
+    <!-- scale page in different screen sizes-->
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <!-- support older version of IE-->
 
-        <title>AI PATHFINDING VISUALIZER</title>
-      <!--  <link rel ="shortcut icon" type="image/png" href = "resource/images/icon.ping"/> -->
-        
-        <!--linking css files-->
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="css/menu.css"/> 
-        <link rel="stylesheet" type="text/css" href="css/selection.css"/>
-        <link rel="stylesheet" type="text/css" href="css/buttons.css"/>
-        <link rel="stylesheet" type="text/css" href="css/grid.css"/>
+    <title>AI PATHFINDING VISUALIZER</title>
+    <!--  <link rel ="shortcut icon" type="image/png" href = "resource/images/icon.ping"/> -->
 
-        <!--scripts-->
-        <script type="text/javascript" src="js/properties.js"></script>
-        <script type="text/javascript" src="js/visualizer.js" defer></script> 
-        <script type="text/javascript" src="js/maze.js" defer></script>
-        <script type="text/javascript" src="js/algorithm.js" defer></script>
-        <script type="text/javascript" src="js/menu.js" defer></script> 
-        <script type="text/javascript" src="js/script.js" defer></script>
-      <!-- test script-->
-     <!--  <script type="text/javascript" src="js/visualizer-master.js" defer></script> -->
+    <!--linking css files-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/selection.css" />
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
 
-    </head>
+    <!--scripts-->
+    <script type="text/javascript" src="js/properties.js"></script>
+    <script type="text/javascript" src="js/visualizer.js" defer></script>
+    <script type="text/javascript" src="js/maze.js" defer></script>
+    <script type="text/javascript" src="js/algorithm.js" defer></script>
+    <script type="text/javascript" src="js/menu.js" defer></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
+    <!-- test script-->
+    <!--  <script type="text/javascript" src="js/visualizer-master.js" defer></script> -->
+  </head>
 
-    <body>
-        <div class="body-container">
-            <div class="menu">
-                    <!-- pathfinding bar -->
-                    <div class ="menu-title-wrap">
-                        <span class="menu-title">Pathfinding</span>
-                    </div>
-        
-                    <!-- solving Algorithm header and it's dropdown menu-->
-                    <div class ="choice" id ="choice_1">
-                        <span class="choice_label" id ="choice_label_1">Solving Algorithm</span>
-                        <div class="select" for="slct_1">
-                            <!-- drop down-->
-                            <select id="slct_1" required="required">
-                                <option selected value="1">Breadth-First</option>
-                                <option value ="2">Bidirectional Breadth-First</option>
-                                <option value="3">Greedy Best-First</option>
-                                <option value="4">Dijkstra</option>
-                                <option value="5">A*</option>
-                            </select>
-                            <!-- drop down arrow-->
-                            <svg>
-                                <use xlink:href="#select-arrow-down"></use>
-                            </svg>
-                        </div>
-                    </div>
+  <body>
+    <div class="body-container">
+      <div class="menu">
+        <!-- pathfinding bar -->
+        <div class="menu-title-wrap">
+          <span class="menu-title">Pathfinding</span>
+        </div>
 
-                    <!-- maze Algorithm header and it's dropdown menu-->
-                    <div class="choice" id="choice_2">
-                    <span class="choice_label" id="choice_label_2">Maze Algorithm</span>
-                        <div class="select" for="slct_2">
-                            <!-- drop down -->
-                            <select id="slct_2" required="required">
-                                <option hidden selected value="0">Custom</option>
-                                <option value="1">Randomized Depth-first</option>
-                                <option value="2">Test-1 Algorithm</option>
-                                <option value="3">Test-2 algorithm</option>
-                                <option value="4">Test-3 algorithm</option>
-                                <option value="5">Test-4 Algorithm</option>
-                                <option value="6">Test-5 Algorithm</option>
-                            </select>
-                            <!-- dropdown arrow -->
-                            <svg>
-                                <use xlink:href="#select-arrow-down"></use> 
-                            </svg>
-                        </div>
-                    </div>
+        <!-- solving Algorithm header and it's dropdown menu-->
+        <div class="choice" id="choice_1">
+          <span class="choice_label" id="choice_label_1"
+            >Solving Algorithm</span
+          >
+          <div class="select" for="slct_1">
+            <!-- drop down-->
+            <select id="slct_1" required="required">
+              <option selected value="1">Breadth-First</option>
+              <option value="2">Greedy Best-First</option>
+              <option value="3">Dijkstra</option>
+              <option value="4">A*</option>
+            </select>
+            <!-- drop down arrow-->
+            <svg>
+              <use xlink:href="#select-arrow-down"></use>
+            </svg>
+          </div>
+        </div>
 
-                    <!-- buttons------------->
-                    <div class="button-wrap">
-                        <!-- clear button-->
-                        <button class="my_button a" id="clear">Clear</button>
-                        <!-- start button-->
-                        <button class="my_button b" id="play">Start</button>
-                    </div>
+        <!-- maze Algorithm header and it's dropdown menu-->
+        <div class="choice" id="choice_2">
+          <span class="choice_label" id="choice_label_2">Maze Algorithm</span>
+          <div class="select" for="slct_2">
+            <!-- drop down -->
+            <select id="slct_2" required="required">
+              <option hidden selected value="0">Custom</option>
+              <option value="1">Randomized Depth-first</option>
+            </select>
+            <!-- dropdown arrow -->
+            <svg>
+              <use xlink:href="#select-arrow-down"></use>
+            </svg>
+          </div>
+        </div>
 
-                    <!-- draw '\/' symbol for dorop down --> 
-                    <svg class="sprites">
-                        <symbol id="select-arrow-down" viewbox="0 0 10 6">
-                        <polyline points="1 1 5 5 9 1"></polyline> 
-                        </symbol>
-                    </svg>
-            </div>
+        <!-- buttons------------->
+        <div class="button-wrap">
+          <!-- clear button-->
+          <button class="my_button a" id="clear">Clear</button>
+          <!-- start button-->
+          <button class="my_button b" id="play">Start</button>
+        </div>
 
-            <!-- visualizer view-->
-            <div class="visualizer">
-               <div id="grid"></div>  <!-- generated grid-table will assigin to grid div-->
-            </div>
-            
+        <!-- draw '\/' symbol for dorop down -->
+        <svg class="sprites">
+          <symbol id="select-arrow-down" viewbox="0 0 10 6">
+            <polyline points="1 1 5 5 9 1"></polyline>
+          </symbol>
+        </svg>
+      </div>
+
+      <!-- visualizer view-->
+      <div class="visualizer">
+        <div id="grid"></div>
+        <!-- generated grid-table will assigin to grid div-->
+      </div>
     </div>
-    </body>
+  </body>
 </html>

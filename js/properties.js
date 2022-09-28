@@ -6,6 +6,11 @@ console.log("::: properties Loaded::: ");
 const initial_max_grid_size = 47;
 const menu_width = 350;
 
+// speed of the maze_generation
+const maze_solver_speed = 100; // value > speed
+// speed of the maze_ solver {affect all the algo}
+const maze_solver_algo_speed = 100; // value > speed
+
 let cell_size;
 let grid_size_x;
 let grid_size_y;
@@ -24,7 +29,6 @@ let clicking = false;
 
 let generating = false;
 let timeouts = [];
-
 
 // algorithm variables;
 let node_list;
