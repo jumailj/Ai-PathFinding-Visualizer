@@ -7,9 +7,13 @@ const initial_max_grid_size = 47;
 const menu_width = 350;
 
 // speed of the maze_generation
-const maze_solver_speed = 100; // value > speed
+let maze_solver_speed = 100; // value > speed // 100 is dafult value
 // speed of the maze_ solver {affect all the algo}
-const maze_solver_algo_speed = 100; // value > speed
+let maze_solver_algo_speed = 100; // value > speed // 100 is default value
+
+// slider input;
+let slider;
+let output;
 
 let cell_size;
 let grid_size_x;

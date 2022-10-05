@@ -7,8 +7,8 @@ console.log("::: visualizer Loaded::: ");
 //  target_pos[][] -> target
 function generate_grid() {
   // x,y value should be same.
-  grid_size_x = 10;
-  grid_size_y = 10;
+  grid_size_x = 20;
+  grid_size_y = 20;
 
   // create new table and assign "my_table" id to table;
   let table = document.createElement("table");
